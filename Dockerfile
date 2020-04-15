@@ -9,7 +9,6 @@ RUN  apt-get update \
  && echo "deb-src http://ppa.launchpad.net/alessandro-strada/ppa/ubuntu bionic main" >> /etc/apt/sources.list \
  && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F639B041 \
  && apt-get update \
- && apt-get install gnupg \
  && apt-get install -yy google-drive-ocamlfuse fuse \
  && apt-get clean all \
  && echo "user_allow_other" >> /etc/fuse.conf \
